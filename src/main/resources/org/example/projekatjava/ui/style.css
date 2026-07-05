@@ -1,0 +1,214 @@
+/* ===============================
+   PALETA: Deep Sea Blue (looked-up)
+   =============================== */
+.root {
+    -true-blue:      #0466c8;  /* glavni akcenat */
+    -sapphire:       #0353a4;
+    -yale-blue:      #023e7d;
+    -oxford-blue:    #002855;  /* glavni background */
+    -oxford-blue-2:  #001845;
+    -oxford-blue-3:  #001233;
+    -delft-blue:     #33415c;  /* border/linije */
+    -paynes-gray:    #5c677d;
+    -slate-gray:     #7d8597;  /* sekundarni tekst */
+    -cool-gray:      #979dac;
+
+    -bg:             #002855;
+    -panel:          #001845;
+    -panel-2:        #001233;
+    -text:           #e6e9ef;
+    -muted:          #7d8597;
+    -accent:         #0466c8;
+    -accent-hover:   #0353a4;
+    -border:         #33415c;
+    -danger:         #d64545;
+}
+
+/* ===============================
+   Globalno
+   =============================== */
+.root {
+    -fx-background-color: -bg;
+    -fx-text-fill: white;
+    -fx-font-smoothing-type: gray;
+}
+
+/* Labels */
+.label {
+    -fx-text-fill: white;
+}
+
+
+/* ===============================
+   Buttons
+   =============================== */
+.button {
+    -fx-background-color:
+            linear-gradient(to bottom, -accent, -accent-hover);
+    -fx-text-fill: white;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.35), 8, 0.3, 0, 2);
+    -fx-border-color: transparent;
+}
+
+.button:hover {
+    -fx-background-color:
+            linear-gradient(to bottom, -accent-hover, -yale-blue);
+}
+
+.button:pressed {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 6, 0.2, 0, 1);
+}
+
+/* “Sekundarno” dugme – dodijeli styleClass="btn-secondary" u Scene Builderu */
+.btn-secondary {
+    -fx-background-color: -panel;
+    -fx-text-fill: -text;
+    -fx-border-color: -border;
+    -fx-border-radius: 12;
+}
+
+/* ToggleButton (za tvoje “Ruta 1..5”) */
+.toggle-button {
+    -fx-background-color: -panel;
+    -fx-text-fill: -text;
+    -fx-background-radius: 12;
+    -fx-padding: 8 14;
+    -fx-border-color: -border;
+    -fx-border-radius: 12;
+}
+
+.toggle-button:selected {
+    -fx-background-color: -accent;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.35), 8, 0.3, 0, 2);
+}
+
+/* RadioButton */
+
+.radio-button {
+    -fx-text-fill: white;
+}
+.radio-button .radio {
+    -fx-mark-color: #0466c8; /* plavi krug kad je selektovan */
+}
+
+/* ===============================
+   TableView
+   =============================== */
+.table-view {
+    -fx-background-color: #001845;
+    -fx-control-inner-background: #001845;
+    -fx-table-cell-border-color: #023e7d;
+    -fx-table-header-border-color: #023e7d;
+    -fx-text-background-color: white;
+}
+.table-view .column-header-background {
+    -fx-background-color: #023e7d;
+}
+.table-view .column-header, .table-view .filler {
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #0466c8;
+    -fx-background-color: #023e7d;
+}
+.table-view .column-header .label {
+    -fx-text-fill: white;
+}
+.table-row-cell {
+    -fx-text-fill: white;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical {
+    -fx-background-color: #001233;              /* Oxford Blue 3 */
+}
+.scroll-bar .thumb {
+    -fx-background-color: #0466c8;              /* True Blue */
+    -fx-background-radius: 5;
+}
+.scroll-bar .thumb:hover {
+    -fx-background-color: #0353a4;              /* Sapphire */
+}
+
+/* ===============================
+   ComboBox
+   =============================== */
+.combo-box, .combo-box .list-cell {
+    -fx-text-fill: white;
+    -fx-background-color: #33415c;
+
+}
+.arrow {
+    -fx-background-color: white;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: #2f3a4d;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+/* ===============================
+   ProgressBar
+   =============================== */
+.progress-bar {
+    -fx-background-color: -panel;
+    -fx-background-radius: 10;
+    -fx-padding: 3;
+    -fx-accent: -accent; /* boja punjenja */
+}
+.progress-bar > .bar {
+    -fx-background-radius: 8;
+}
+
+/* ===============================
+   Container paneli
+   =============================== */
+.card {
+    -fx-background-color: -panel;
+    -fx-background-radius: 16;
+    -fx-padding: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.35), 16, 0.35, 0, 6);
+    -fx-border-color: -border;
+    -fx-border-radius: 16;
+}
+
+/* ista geometrija u svim stanjima */
+#rutaButton,
+#rutaButton:hover,
+#rutaButton:focused,
+#rutaButton:default,
+#rutaButton:armed,
+#rutaButton:pressed,
+#rutaButton:selected {
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-font-size: 14px;
+}
+
+/* samo boje po stanjima (ne diramo padding!) */
+#rutaButton {
+    -fx-text-fill: white;
+    -fx-background-color: #0466c8;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 8, 0, 0, 2);
+}
+#rutaButton:hover    { -fx-background-color: #0353a4; }
+#rutaButton:pressed  { -fx-background-color: #023e7d;  }
+#rutaButton:focused  { -fx-focus-color: transparent; -fx-faint-focus-color: transparent; }
+#rutaButton:default  { /* po želji ista boja, ne mijenjaj padding */ }
+
+.custom-alert {
+    -fx-background-color: -oxford-blue;
+}
+
+.custom-alert .content.label {
+    -fx-text-fill: white;
+}
+
+.custom-alert .button {
+    -fx-background-color: -sapphire;
+    -fx-text-fill: white;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+}

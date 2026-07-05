@@ -1,0 +1,7 @@
+module:org.example.projekatjava
+org.example.projekatjava.algorithm
+org.example.projekatjava.data
+org.example.projekatjava.generator
+org.example.projekatjava.graph
+org.example.projekatjava.model
+org.example.projekatjava.ui

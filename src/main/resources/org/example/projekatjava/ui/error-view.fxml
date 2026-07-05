@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.projekatjava.ui.ErrorController">
+   <children>
+      <Label fx:id="label1" layoutX="25.0" layoutY="59.0" text="Došlo je do greške. Pokušajte ponovo!">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="button1" layoutX="111.0" layoutY="121.0" mnemonicParsing="false" onAction="#button1Clicked" prefHeight="26.0" prefWidth="77.0" text="Close" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="530.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.projekatjava.ui.SplashController">
+   <children>
+      <ProgressBar fx:id="progressBar" layoutX="149.0" layoutY="251.0" prefHeight="27.0" prefWidth="387.0" progress="0.0" />
+      <Label fx:id="statusLabel" layoutX="296.0" layoutY="198.0" text="Dobrodošli!">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="label1" layoutX="215.0" layoutY="330.0" text="Ukupno prodatih karata:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="countLabel" layoutX="391.0" layoutY="330.0" text="c">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="label2" layoutX="274.0" layoutY="361.0" text="Ukupan prihod:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="revenueLabel" layoutX="391.0" layoutY="361.0" text="p">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
