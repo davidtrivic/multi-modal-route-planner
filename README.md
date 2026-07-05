@@ -4,7 +4,7 @@ A desktop application that finds the optimal travel route between cities within 
 
 ## Overview
 
-The application models a country as an `n × m` grid of cities. Each city has a bus station and a train station, each with its own departure schedule (departure time, arrival time, price, and minimum transfer time). The goal is to compute — and visualize — the best route between any two cities, optimizing for one of three criteria:
+The application models a country as an `n × m` grid of cities. Each city has a bus station and a train station, each with its own departure schedule (departure time, arrival time, price, and minimum transfer time). The goal is to compute - and visualize - the best route between any two cities, optimizing for one of three criteria:
 
 - **Shortest travel time**
 - **Lowest price**
@@ -38,26 +38,26 @@ A full written report explaining the algorithm choices is included in the reposi
 
 ## Screenshots
 
-**Route result** — best route for the selected criterion, with total time/price summary:
+**Route result** - best route for the selected criterion, with total time/price summary:
 
 ![Route result](screenshots/route-result.png)
 
-**Graph visualization** — the full city graph, with the computed route highlighted:
+**Graph visualization** - the full city graph, with the computed route highlighted:
 
 ![Graph visualization](screenshots/graph-visualization.png)
 
-**Top 5 routes** — alternative routes ranked by the chosen criterion, each purchasable:
+**Top 5 routes** - alternative routes ranked by the chosen criterion, each purchasable:
 
 ![Top 5 routes](screenshots/top5-routes.png)
 
 ## Tech Stack
 
 - **Java 21**
-- **JavaFX** (Controls, FXML, Swing interop) — GUI
-- **GraphStream** (`gs-core`, `gs-ui-javafx`) — graph visualization
-- **Jackson** / **Gson** — JSON data parsing
-- **Maven** — build and dependency management
-- **JUnit 5** — testing
+- **JavaFX** (Controls, FXML, Swing interop) - GUI
+- **GraphStream** (`gs-core`, `gs-ui-javafx`) - graph visualization
+- **Jackson** / **Gson** - JSON data parsing
+- **Maven** - build and dependency management
+- **JUnit 5** - testing
 
 ## Project Structure
 
@@ -65,8 +65,8 @@ A full written report explaining the algorithm choices is included in the reposi
 src/main/java/org/example/projekatjava/
 ├── algorithm/     # DijkstraTime, DijkstraPrice, BFS, Top5Routes, Result
 ├── data/          # JSON loading (LoadData, JsonLoader, LoadRacuni)
-├── generator/     # TransportDataGenerator — procedural data generation
-├── graph/         # GraphStream wrapper — graph building, drawing, highlighting
+├── generator/     # TransportDataGenerator - procedural data generation
+├── graph/         # GraphStream wrapper - graph building, drawing, highlighting
 ├── model/         # City, Station, BusStation, TrainStation, Country, Departure, Racun
 └── ui/            # JavaFX controllers and views (Hello, Top5, Splash, Error)
 ```
@@ -99,4 +99,4 @@ generator.saveToJson(data, "transport_data.json");
 
 ## Notes
 
-This was developed as a coursework assignment; the task specification required JavaFX/Swing for the GUI, GraphStream for graph visualization, JSON-based data loading, package-based organization, and Javadoc documentation — all reflected in the structure above.
+This was developed as a coursework assignment; the task specification required JavaFX/Swing for the GUI, GraphStream for graph visualization, JSON-based data loading, package-based organization, and Javadoc documentation - all reflected in the structure above.
